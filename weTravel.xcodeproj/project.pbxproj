@@ -11,10 +11,23 @@
 		840C7B4A22A7E04B007AF28E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B4922A7E04B007AF28E /* ViewController.swift */; };
 		840C7B4D22A7E04B007AF28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C7B4B22A7E04B007AF28E /* Main.storyboard */; };
 		840C7B5022A7E04B007AF28E /* weTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B4E22A7E04B007AF28E /* weTravel.xcdatamodeld */; };
-		840C7B5222A7E04E007AF28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840C7B5122A7E04E007AF28E /* Assets.xcassets */; };
 		840C7B5522A7E04E007AF28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C7B5322A7E04E007AF28E /* LaunchScreen.storyboard */; };
 		840C7B6022A7E04F007AF28E /* weTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B5F22A7E04F007AF28E /* weTravelTests.swift */; };
 		840C7B6B22A7E04F007AF28E /* weTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B6A22A7E04F007AF28E /* weTravelUITests.swift */; };
+		840C7B7B22A7E408007AF28E /* APICallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B7A22A7E408007AF28E /* APICallManager.swift */; };
+		840C7B7D22A7E64D007AF28E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B7C22A7E64D007AF28E /* City.swift */; };
+		840C7B8122A7F4FB007AF28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840C7B8022A7F4FB007AF28E /* Assets.xcassets */; };
+		840C7CC722A7F69E007AF28E /* splash_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 840C7CC622A7F69E007AF28E /* splash_background.png */; };
+		840C7CC922A7F799007AF28E /* splash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 840C7CC822A7F799007AF28E /* splash_logo.png */; };
+		840C7CCC22A7FA0C007AF28E /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7CCB22A7FA0C007AF28E /* UserDefault.swift */; };
+		840C7CCF22A8036B007AF28E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7CCE22A8036B007AF28E /* LoginViewController.swift */; };
+		840C7CD122A805E7007AF28E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7CD022A805E7007AF28E /* HomeViewController.swift */; };
+		840C7CD422A8063C007AF28E /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C7CD322A8063C007AF28E /* HomeStoryboard.storyboard */; };
+		845FD2A522AA8BFD004A16A9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD2A422AA8BFD004A16A9 /* User.swift */; };
+		845FD2A722AA8D2A004A16A9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD2A622AA8D2A004A16A9 /* UserService.swift */; };
+		845FD2A922AA8E04004A16A9 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD2A822AA8E04004A16A9 /* ApiResponse.swift */; };
+		845FD2AD22AAB4F8004A16A9 /* CityPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD2AC22AAB4F8004A16A9 /* CityPackageViewController.swift */; };
+		CEC30CF0BB516053357D5369 /* Pods_weTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C18F57881DD261F3C39664 /* Pods_weTravel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E59476AFCDEF1687E2A9B20 /* Pods-weTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weTravel.debug.xcconfig"; path = "Target Support Files/Pods-weTravel/Pods-weTravel.debug.xcconfig"; sourceTree = "<group>"; };
 		840C7B4422A7E04B007AF28E /* weTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C7B4722A7E04B007AF28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840C7B4922A7E04B007AF28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840C7B4C22A7E04B007AF28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840C7B4F22A7E04B007AF28E /* weTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weTravel.xcdatamodel; sourceTree = "<group>"; };
-		840C7B5122A7E04E007AF28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840C7B5422A7E04E007AF28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840C7B5622A7E04E007AF28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840C7B5B22A7E04F007AF28E /* weTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +62,21 @@
 		840C7B6622A7E04F007AF28E /* weTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C7B6A22A7E04F007AF28E /* weTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weTravelUITests.swift; sourceTree = "<group>"; };
 		840C7B6C22A7E04F007AF28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840C7B7A22A7E408007AF28E /* APICallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallManager.swift; sourceTree = "<group>"; };
+		840C7B7C22A7E64D007AF28E /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		840C7B8022A7F4FB007AF28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840C7CC622A7F69E007AF28E /* splash_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_background.png; sourceTree = "<group>"; };
+		840C7CC822A7F799007AF28E /* splash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_logo.png; sourceTree = "<group>"; };
+		840C7CCB22A7FA0C007AF28E /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		840C7CCE22A8036B007AF28E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		840C7CD022A805E7007AF28E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		840C7CD322A8063C007AF28E /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		845FD2A422AA8BFD004A16A9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		845FD2A622AA8D2A004A16A9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		845FD2A822AA8E04004A16A9 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		845FD2AC22AAB4F8004A16A9 /* CityPackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPackageViewController.swift; sourceTree = "<group>"; };
+		93C18F57881DD261F3C39664 /* Pods_weTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E9FE8CE482034FB5CC0AF7 /* Pods-weTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weTravel.release.xcconfig"; path = "Target Support Files/Pods-weTravel/Pods-weTravel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC30CF0BB516053357D5369 /* Pods_weTravel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3563E9AA12949F801FD34118 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E59476AFCDEF1687E2A9B20 /* Pods-weTravel.debug.xcconfig */,
+				A4E9FE8CE482034FB5CC0AF7 /* Pods-weTravel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E5078BE11001DE342FD8EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93C18F57881DD261F3C39664 /* Pods_weTravel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		840C7B3B22A7E04B007AF28E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				840C7B5E22A7E04F007AF28E /* weTravelTests */,
 				840C7B6922A7E04F007AF28E /* weTravelUITests */,
 				840C7B4522A7E04B007AF28E /* Products */,
+				3563E9AA12949F801FD34118 /* Pods */,
+				4E5078BE11001DE342FD8EFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +147,17 @@
 		840C7B4622A7E04B007AF28E /* weTravel */ = {
 			isa = PBXGroup;
 			children = (
+				840C7CD222A80617007AF28E /* view */,
+				840C7CCD22A80319007AF28E /* controller */,
+				840C7CCA22A7F9EB007AF28E /* utilities */,
+				840C7CC822A7F799007AF28E /* splash_logo.png */,
+				840C7CC622A7F69E007AF28E /* splash_background.png */,
+				840C7B8022A7F4FB007AF28E /* Assets.xcassets */,
+				840C7B7922A7E3E0007AF28E /* APICallManager */,
+				840C7B7822A7E1A2007AF28E /* model */,
 				840C7B4722A7E04B007AF28E /* AppDelegate.swift */,
 				840C7B4922A7E04B007AF28E /* ViewController.swift */,
 				840C7B4B22A7E04B007AF28E /* Main.storyboard */,
-				840C7B5122A7E04E007AF28E /* Assets.xcassets */,
 				840C7B5322A7E04E007AF28E /* LaunchScreen.storyboard */,
 				840C7B5622A7E04E007AF28E /* Info.plist */,
 				840C7B4E22A7E04B007AF28E /* weTravel.xcdatamodeld */,
@@ -128,6 +183,51 @@
 			path = weTravelUITests;
 			sourceTree = "<group>";
 		};
+		840C7B7822A7E1A2007AF28E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				840C7B7C22A7E64D007AF28E /* City.swift */,
+				845FD2A422AA8BFD004A16A9 /* User.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		840C7B7922A7E3E0007AF28E /* APICallManager */ = {
+			isa = PBXGroup;
+			children = (
+				840C7B7A22A7E408007AF28E /* APICallManager.swift */,
+				845FD2A622AA8D2A004A16A9 /* UserService.swift */,
+				845FD2A822AA8E04004A16A9 /* ApiResponse.swift */,
+			);
+			path = APICallManager;
+			sourceTree = "<group>";
+		};
+		840C7CCA22A7F9EB007AF28E /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				840C7CCB22A7FA0C007AF28E /* UserDefault.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		840C7CCD22A80319007AF28E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				840C7CCE22A8036B007AF28E /* LoginViewController.swift */,
+				840C7CD022A805E7007AF28E /* HomeViewController.swift */,
+				845FD2AC22AAB4F8004A16A9 /* CityPackageViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		840C7CD222A80617007AF28E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				840C7CD322A8063C007AF28E /* HomeStoryboard.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840C7B6F22A7E04F007AF28E /* Build configuration list for PBXNativeTarget "weTravel" */;
 			buildPhases = (
+				D67CEE2EC0C96E5B6ED92D41 /* [CP] Check Pods Manifest.lock */,
 				840C7B4022A7E04B007AF28E /* Sources */,
 				840C7B4122A7E04B007AF28E /* Frameworks */,
 				840C7B4222A7E04B007AF28E /* Resources */,
+				FB654A9876380795AB3E0D9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				840C7B5522A7E04E007AF28E /* LaunchScreen.storyboard in Resources */,
-				840C7B5222A7E04E007AF28E /* Assets.xcassets in Resources */,
+				840C7B8122A7F4FB007AF28E /* Assets.xcassets in Resources */,
+				840C7CD422A8063C007AF28E /* HomeStoryboard.storyboard in Resources */,
+				840C7CC722A7F69E007AF28E /* splash_background.png in Resources */,
 				840C7B4D22A7E04B007AF28E /* Main.storyboard in Resources */,
+				840C7CC922A7F799007AF28E /* splash_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +359,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D67CEE2EC0C96E5B6ED92D41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weTravel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB654A9876380795AB3E0D9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weTravel/Pods-weTravel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weTravel/Pods-weTravel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		840C7B4022A7E04B007AF28E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845FD2A922AA8E04004A16A9 /* ApiResponse.swift in Sources */,
+				840C7CCF22A8036B007AF28E /* LoginViewController.swift in Sources */,
+				845FD2AD22AAB4F8004A16A9 /* CityPackageViewController.swift in Sources */,
+				840C7B7D22A7E64D007AF28E /* City.swift in Sources */,
 				840C7B4A22A7E04B007AF28E /* ViewController.swift in Sources */,
+				840C7CD122A805E7007AF28E /* HomeViewController.swift in Sources */,
+				840C7CCC22A7FA0C007AF28E /* UserDefault.swift in Sources */,
+				845FD2A522AA8BFD004A16A9 /* User.swift in Sources */,
+				845FD2A722AA8D2A004A16A9 /* UserService.swift in Sources */,
+				840C7B7B22A7E408007AF28E /* APICallManager.swift in Sources */,
 				840C7B5022A7E04B007AF28E /* weTravel.xcdatamodeld in Sources */,
 				840C7B4822A7E04B007AF28E /* AppDelegate.swift in Sources */,
 			);
@@ -434,6 +597,7 @@
 		};
 		840C7B7022A7E04F007AF28E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E59476AFCDEF1687E2A9B20 /* Pods-weTravel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +615,7 @@
 		};
 		840C7B7122A7E04F007AF28E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E9FE8CE482034FB5CC0AF7 /* Pods-weTravel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
