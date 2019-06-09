@@ -23,6 +23,11 @@
 		840C7CCF22A8036B007AF28E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7CCE22A8036B007AF28E /* LoginViewController.swift */; };
 		840C7CD122A805E7007AF28E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7CD022A805E7007AF28E /* HomeViewController.swift */; };
 		840C7CD422A8063C007AF28E /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C7CD322A8063C007AF28E /* HomeStoryboard.storyboard */; };
+		8413A7D522ABCC7C00BFD042 /* PackageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413A7D422ABCC7C00BFD042 /* PackageService.swift */; };
+		8413A7D722ABCCD700BFD042 /* CityPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413A7D622ABCCD700BFD042 /* CityPackage.swift */; };
+		8417548622AD39DB00E312BA /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 8417548522AD39DB00E312BA /* mask.png */; };
+		8417548822AD47BA00E312BA /* DetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417548722AD47B900E312BA /* DetailsStoryboard.storyboard */; };
+		8417548A22AD47F600E312BA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417548922AD47F600E312BA /* DetailsViewController.swift */; };
 		845FD2A522AA8BFD004A16A9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD2A422AA8BFD004A16A9 /* User.swift */; };
 		845FD2A722AA8D2A004A16A9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD2A622AA8D2A004A16A9 /* UserService.swift */; };
 		845FD2A922AA8E04004A16A9 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD2A822AA8E04004A16A9 /* ApiResponse.swift */; };
@@ -71,6 +76,11 @@
 		840C7CCE22A8036B007AF28E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		840C7CD022A805E7007AF28E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		840C7CD322A8063C007AF28E /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		8413A7D422ABCC7C00BFD042 /* PackageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageService.swift; sourceTree = "<group>"; };
+		8413A7D622ABCCD700BFD042 /* CityPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPackage.swift; sourceTree = "<group>"; };
+		8417548522AD39DB00E312BA /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		8417548722AD47B900E312BA /* DetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		8417548922AD47F600E312BA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		845FD2A422AA8BFD004A16A9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		845FD2A622AA8D2A004A16A9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		845FD2A822AA8E04004A16A9 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
@@ -147,6 +157,7 @@
 		840C7B4622A7E04B007AF28E /* weTravel */ = {
 			isa = PBXGroup;
 			children = (
+				8417548522AD39DB00E312BA /* mask.png */,
 				840C7CD222A80617007AF28E /* view */,
 				840C7CCD22A80319007AF28E /* controller */,
 				840C7CCA22A7F9EB007AF28E /* utilities */,
@@ -188,6 +199,7 @@
 			children = (
 				840C7B7C22A7E64D007AF28E /* City.swift */,
 				845FD2A422AA8BFD004A16A9 /* User.swift */,
+				8413A7D622ABCCD700BFD042 /* CityPackage.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -198,6 +210,7 @@
 				840C7B7A22A7E408007AF28E /* APICallManager.swift */,
 				845FD2A622AA8D2A004A16A9 /* UserService.swift */,
 				845FD2A822AA8E04004A16A9 /* ApiResponse.swift */,
+				8413A7D422ABCC7C00BFD042 /* PackageService.swift */,
 			);
 			path = APICallManager;
 			sourceTree = "<group>";
@@ -216,6 +229,7 @@
 				840C7CCE22A8036B007AF28E /* LoginViewController.swift */,
 				840C7CD022A805E7007AF28E /* HomeViewController.swift */,
 				845FD2AC22AAB4F8004A16A9 /* CityPackageViewController.swift */,
+				8417548922AD47F600E312BA /* DetailsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -224,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				840C7CD322A8063C007AF28E /* HomeStoryboard.storyboard */,
+				8417548722AD47B900E312BA /* DetailsStoryboard.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -334,7 +349,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8417548622AD39DB00E312BA /* mask.png in Resources */,
 				840C7B5522A7E04E007AF28E /* LaunchScreen.storyboard in Resources */,
+				8417548822AD47BA00E312BA /* DetailsStoryboard.storyboard in Resources */,
 				840C7B8122A7F4FB007AF28E /* Assets.xcassets in Resources */,
 				840C7CD422A8063C007AF28E /* HomeStoryboard.storyboard in Resources */,
 				840C7CC722A7F69E007AF28E /* splash_background.png in Resources */,
@@ -420,11 +437,14 @@
 				840C7B4A22A7E04B007AF28E /* ViewController.swift in Sources */,
 				840C7CD122A805E7007AF28E /* HomeViewController.swift in Sources */,
 				840C7CCC22A7FA0C007AF28E /* UserDefault.swift in Sources */,
+				8413A7D722ABCCD700BFD042 /* CityPackage.swift in Sources */,
 				845FD2A522AA8BFD004A16A9 /* User.swift in Sources */,
 				845FD2A722AA8D2A004A16A9 /* UserService.swift in Sources */,
 				840C7B7B22A7E408007AF28E /* APICallManager.swift in Sources */,
+				8413A7D522ABCC7C00BFD042 /* PackageService.swift in Sources */,
 				840C7B5022A7E04B007AF28E /* weTravel.xcdatamodeld in Sources */,
 				840C7B4822A7E04B007AF28E /* AppDelegate.swift in Sources */,
+				8417548A22AD47F600E312BA /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

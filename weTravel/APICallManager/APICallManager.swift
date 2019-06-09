@@ -30,6 +30,10 @@ class APICallManager{
     func login(user  : User , completion: @escaping (_ result: RequestResult<User>)-> Void){
         UserService.instance.login(year: "a", completion: completion)
     }
+    
+    func getCityPackages(city  : String , completion: @escaping (_ result: RequestResult<[CityPackage]>)-> Void){
+        PackageService.instance.getCityPackages(city: city, completion: completion)
+    }
     func callAPIGetCity(onSuccess successCallback: ((_ city: [City]) -> Void)?,
                           onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         let url = API_BASE_URL + Endpoint.city.rawValue

@@ -10,18 +10,94 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class CityPackageViewController: UICollectionViewController {
 
+class PackageViewCell: UICollectionViewCell {
+    
+    
+
+    @IBOutlet weak var packageName: UILabel!
+    
+    @IBOutlet weak var packageImage: UIImageView!
+    func SetImage(url:String){
+        //paralel process
+        let catPictureURL = URL(string: "http://172.16.5.220:3000/\(url)")!
+        let session = URLSession(configuration: .default)
+        
+        // Define a download task. The download task will download the contents of the URL as a Data object and then you can do what you wish with that data.
+        let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
+            // The download has finished.
+            if let e = error {
+                print("Error downloading cat picture: \(e)")
+            } else {
+                // No errors found.
+                // It would be weird if we didn't have a response, so check for that too.
+                if let res = response as? HTTPURLResponse {
+                    //  print("Downloaded cat picture with response code \(res.statusCode)")
+                    if let imageData = data {
+                        // Finally convert that Data into an image and do what you wish with it.
+                        self.packageImage.image = UIImage(data: imageData)
+                        // myimage.image = UIImage(named: movieList[indexPath.row].image!)
+                        // Do something with your image.
+                        
+                    } else {
+                        print("Couldn't get image: Image is nil")
+                    }
+                } else {
+                    print("Couldn't get response code for some reason")
+                }
+            }
+        }
+        
+        downloadPicTask.resume()
+}
+}
+class CityPackageViewController: UIViewController  , UICollectionViewDataSource , UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.packages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "citypackagecell", for: indexPath) as! PackageViewCell
+        let data = self.packages[indexPath.row]
+        cell.packageName.text = data.p_name
+        cell.SetImage(url: data.paths[0])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //pkgdetails
+        let pkg = self.packages[indexPath.row]
+        let storyBoard : UIStoryboard = UIStoryboard(name: "DetailsStoryboard", bundle:nil)
+       var  pkgdetails = DetailsViewController()
+         pkgdetails = storyBoard.instantiateViewController(withIdentifier: "pkgDetails") as! DetailsViewController
+         //  pkgdetails.pkgDetails = pkg
+      //  self.present(pkgdetails, animated:true, completion:nil)
+         self.navigationController?.pushViewController(pkgdetails, animated: true)
+    
+      
+    }
+    
+
+    @IBOutlet weak var collectionview: UICollectionView!
     var city : City?
+    var packages : [CityPackage] = [CityPackage]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        APICallManager.instance.getCityPackages(city: (city?.city_name)!) { (response) in
+            switch response{
+            case.done(value: let result):
+                print(result)
+                self.packages = result
+                self.collectionview.reloadData()
+             
+                break
+            case.failed(let message):
+                print(message)
+                break
+            }
+        }
+  
         // Do any additional setup after loading the view.
     }
 
@@ -37,24 +113,24 @@ class CityPackageViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
-        return cell
-    }
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//
+//    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of items
+//        return 0
+//    }
+//
+//    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+//
+//        // Configure the cell
+//
+//        return cell
+//    }
 
     // MARK: UICollectionViewDelegate
 
