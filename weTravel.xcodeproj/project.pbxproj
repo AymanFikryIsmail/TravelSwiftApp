@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8408983A22AFFDBD003F7159 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408983922AFFDBC003F7159 /* BookingViewController.swift */; };
+		8408983C22B000AC003F7159 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408983B22B000AC003F7159 /* QRViewController.swift */; };
 		840C7B4822A7E04B007AF28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B4722A7E04B007AF28E /* AppDelegate.swift */; };
 		840C7B4A22A7E04B007AF28E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C7B4922A7E04B007AF28E /* ViewController.swift */; };
 		840C7B4D22A7E04B007AF28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C7B4B22A7E04B007AF28E /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		3E59476AFCDEF1687E2A9B20 /* Pods-weTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weTravel.debug.xcconfig"; path = "Target Support Files/Pods-weTravel/Pods-weTravel.debug.xcconfig"; sourceTree = "<group>"; };
+		8408983922AFFDBC003F7159 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		8408983B22B000AC003F7159 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		840C7B4422A7E04B007AF28E /* weTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C7B4722A7E04B007AF28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840C7B4922A7E04B007AF28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 				840C7CD022A805E7007AF28E /* HomeViewController.swift */,
 				845FD2AC22AAB4F8004A16A9 /* CityPackageViewController.swift */,
 				8417548922AD47F600E312BA /* DetailsViewController.swift */,
+				8408983922AFFDBC003F7159 /* BookingViewController.swift */,
+				8408983B22B000AC003F7159 /* QRViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 			files = (
 				845FD2A922AA8E04004A16A9 /* ApiResponse.swift in Sources */,
 				840C7CCF22A8036B007AF28E /* LoginViewController.swift in Sources */,
+				8408983C22B000AC003F7159 /* QRViewController.swift in Sources */,
 				845FD2AD22AAB4F8004A16A9 /* CityPackageViewController.swift in Sources */,
 				840C7B7D22A7E64D007AF28E /* City.swift in Sources */,
 				840C7B4A22A7E04B007AF28E /* ViewController.swift in Sources */,
@@ -444,6 +451,7 @@
 				8413A7D522ABCC7C00BFD042 /* PackageService.swift in Sources */,
 				840C7B5022A7E04B007AF28E /* weTravel.xcdatamodeld in Sources */,
 				840C7B4822A7E04B007AF28E /* AppDelegate.swift in Sources */,
+				8408983A22AFFDBD003F7159 /* BookingViewController.swift in Sources */,
 				8417548A22AD47F600E312BA /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

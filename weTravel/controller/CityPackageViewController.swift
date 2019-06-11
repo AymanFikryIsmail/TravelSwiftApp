@@ -70,7 +70,7 @@ class CityPackageViewController: UIViewController  , UICollectionViewDataSource 
         let storyBoard : UIStoryboard = UIStoryboard(name: "DetailsStoryboard", bundle:nil)
        var  pkgdetails = DetailsViewController()
          pkgdetails = storyBoard.instantiateViewController(withIdentifier: "pkgDetails") as! DetailsViewController
-         //  pkgdetails.pkgDetails = pkg
+          pkgdetails.pkgDetails = pkg
       //  self.present(pkgdetails, animated:true, completion:nil)
          self.navigationController?.pushViewController(pkgdetails, animated: true)
     

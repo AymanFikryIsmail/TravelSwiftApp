@@ -15,6 +15,7 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var departureCity: UILabel!
     @IBOutlet weak var price: UILabel!
+
     @IBOutlet weak var rate: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var days: UILabel!
@@ -27,16 +28,24 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(pkgDetails)
-//        price.text = "\(String(describing: pkgDetails?.price))"
-//        arrivalCity.text = pkgDetails?.travel_to
-//        arrivalCity2.text = pkgDetails?.travel_to
-//        departCity2.text = pkgDetails?.travel_from
-//        departureCity.text = pkgDetails?.travel_from
-//        rate.text = "\(pkgDetails?.rate ?? 0)"
-//        date.text = pkgDetails?.date
-//        days.text = "\(pkgDetails?.duration ?? 0)"
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "yyyy-MM-dd"
+//        let yourDate = formatter.date(from: (pkgDetails?.date)!)
+//        let myStringafd = formatter.string(from: yourDate!)
 //
-//        SetImage(url : "");
+//        print(myStringafd)
+        
+        price.text = "\(String(describing: pkgDetails?.price))"
+        arrivalCity.text = pkgDetails?.travel_to
+        arrivalCity2.text = pkgDetails?.travel_to
+        departCity2.text = pkgDetails?.travel_from
+        departureCity.text = pkgDetails?.travel_from
+        price.text = "\( pkgDetails?.price) LE"
+        rate.text = "rate : \(pkgDetails?.rate ?? 0)"
+        date.text = pkgDetails?.date
+        days.text = "\(pkgDetails?.duration ?? 0) days"
+
+        SetImage(url : "");
         // Do any additional setup after loading the view.
     }
     func SetImage(url:String){
@@ -72,6 +81,15 @@ class DetailsViewController: UIViewController {
         downloadPicTask.resume()
     }
     @IBAction func gotoBooking(_ sender: Any) {
+        
+     
+      
+        var  pkgdetails = BookingViewController()
+        pkgdetails = self.storyboard!.instantiateViewController(withIdentifier: "bookingvc") as! BookingViewController
+        pkgdetails.pkgDetails = pkgDetails
+
+        self.navigationController?.pushViewController(pkgdetails, animated: true)
+        
     }
     
     /*
