@@ -234,13 +234,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/HomeViewController.swift"
-            timestampString = "581963223.668147"
+            timestampString = "582042004.4207489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
             endingLineNumber = "97"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -250,13 +250,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/HomeViewController.swift"
-            timestampString = "581963223.668416"
+            timestampString = "582042004.420893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "SetImage(url:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -282,7 +282,7 @@
                   moduleName = "weTravel"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/wetravel_app/weTravel/weTravel/controller/CityPackageViewController.swift"
-                  timestampString = "581963224.544412"
+                  timestampString = "582042004.99883"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -297,7 +297,7 @@
                   moduleName = "weTravel"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/wetravel_app/weTravel/weTravel/controller/CityPackageViewController.swift"
-                  timestampString = "581963224.556273"
+                  timestampString = "582042005.005836"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -312,7 +312,7 @@
                   moduleName = "weTravel"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/wetravel_app/weTravel/weTravel/controller/CityPackageViewController.swift"
-                  timestampString = "581963224.566133"
+                  timestampString = "582042005.013363"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -327,7 +327,7 @@
                   moduleName = "weTravel"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/wetravel_app/weTravel/weTravel/controller/CityPackageViewController.swift"
-                  timestampString = "581963224.586393"
+                  timestampString = "582042005.020658"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -344,13 +344,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/HomeViewController.swift"
-            timestampString = "581963223.668679"
+            timestampString = "582042004.421044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -360,13 +360,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/HomeViewController.swift"
-            timestampString = "581963223.668764"
+            timestampString = "582042004.421137"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -376,13 +376,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/HomeViewController.swift"
-            timestampString = "581963223.668829"
+            timestampString = "582042004.421225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -552,7 +552,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/DetailsViewController.swift"
-            timestampString = "581963223.669283"
+            timestampString = "582041441.701835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -568,7 +568,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/DetailsViewController.swift"
-            timestampString = "581963223.670046"
+            timestampString = "582041441.701992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -584,7 +584,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/DetailsViewController.swift"
-            timestampString = "581963223.670752"
+            timestampString = "582041441.70205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -600,12 +600,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weTravel/controller/DetailsViewController.swift"
-            timestampString = "581963275.498613"
+            timestampString = "582041441.702095"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "weTravel/controller/BookingViewController.swift"
+            timestampString = "582042004.42193"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "changeAdultNo(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "weTravel/controller/BookingViewController.swift"
+            timestampString = "582042004.422954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "changeChildNo(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

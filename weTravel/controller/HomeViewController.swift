@@ -85,7 +85,7 @@ class HomeViewController: UIViewController  , UICollectionViewDataSource , UICol
         cityDetail.hidesBottomBarWhenPushed = true;
         
         self.navigationController?.pushViewController(cityDetail, animated: true)
-    }
+    }  
     @IBOutlet weak var cityCollection: UICollectionView!
    
     var cities : [City] = [City]()
