@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--favourite-->
         <scene sceneID="fgh-gl-gck">
             <objects>
                 <viewController id="Ztd-8s-fXj" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="btt-8N-Oil"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="8Ri-Mb-BT2"/>
+                    <tabBarItem key="tabBarItem" title="favourite" selectedImage="fav" id="8Ri-Mb-BT2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRv-iB-0aK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dkJ-uL-Vwy">
-                                <rect key="frame" x="70" y="85" width="240" height="111"/>
+                                <rect key="frame" x="63" y="75" width="247" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Search on  Our
@@ -62,6 +62,10 @@ Largest  Data.</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recent" translatesAutoresizingMaskIntoConstraints="NO" id="v1h-4Q-nbl">
+                                <rect key="frame" x="233" y="136" width="63" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zgY-ky-fEp">
                                 <rect key="frame" x="16" y="204" width="343" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -104,15 +108,19 @@ Largest  Data.</string>
                                     <outlet property="delegate" destination="ICf-eU-92t" id="ZQP-TS-qrJ"/>
                                 </connections>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Afa-fi-xeF">
-                                <rect key="frame" x="82" y="136" width="63" height="48"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="all" translatesAutoresizingMaskIntoConstraints="NO" id="Afa-fi-xeF">
+                                <rect key="frame" x="156" y="136" width="63" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recommended" translatesAutoresizingMaskIntoConstraints="NO" id="UYe-mX-2Y6">
+                                <rect key="frame" x="71" y="136" width="63" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="RsR-7y-0Ek"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="hw1-zS-kBx"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home" id="hw1-zS-kBx"/>
                     <connections>
                         <outlet property="cityCollection" destination="zgY-ky-fEp" id="XlH-HC-Mf6"/>
                     </connections>
@@ -138,17 +146,17 @@ Largest  Data.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZjM-Ds-1ih">
-                                    <size key="itemSize" width="374" height="203"/>
+                                    <size key="itemSize" width="374" height="234"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="citypackagecell" id="qZB-NT-Qv9" customClass="PackageViewCell" customModule="weTravel" customModuleProvider="target">
-                                        <rect key="frame" x="0.5" y="0.0" width="374" height="203"/>
+                                        <rect key="frame" x="0.5" y="0.0" width="374" height="234"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="203"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="234"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-ZQ-yRh">
@@ -156,43 +164,58 @@ Largest  Data.</string>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRU-Gg-rBj">
-                                                    <rect key="frame" x="20" y="114" width="121" height="21"/>
+                                                    <rect key="frame" x="40" y="114" width="225" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fav" translatesAutoresizingMaskIntoConstraints="NO" id="g4B-mT-1cy">
+                                                    <rect key="frame" x="321" y="110" width="33" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-wr-cEf">
-                                                    <rect key="frame" x="312" y="114" width="41" height="21"/>
+                                                    <rect key="frame" x="273" y="151" width="91" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20/9/2005" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-VV-iz4">
-                                                    <rect key="frame" x="20" y="146" width="82" height="21"/>
+                                                    <rect key="frame" x="46" y="163" width="106" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="only 2 available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbD-z2-fPX">
-                                                    <rect key="frame" x="207" y="171" width="142" height="21"/>
+                                                    <rect key="frame" x="233" y="198" width="142" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPm-mJ-c55">
-                                                    <rect key="frame" x="20" y="174" width="51" height="21"/>
+                                                    <rect key="frame" x="14" y="200" width="106" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="index" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-pO-C2b">
+                                                    <rect key="frame" x="9" y="108" width="20" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="7kL-yy-Ejf">
+                                                    <rect key="frame" x="10" y="153" width="32" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="packageAvailable" destination="CbD-z2-fPX" id="yhb-LR-5bz"/>
+                                            <outlet property="packageDate" destination="S2W-VV-iz4" id="LSk-hk-7Yx"/>
+                                            <outlet property="packageDuration" destination="zPm-mJ-c55" id="6dX-rZ-gXO"/>
                                             <outlet property="packageImage" destination="ItW-ZQ-yRh" id="FWe-aE-ZPd"/>
                                             <outlet property="packageName" destination="cRU-Gg-rBj" id="h0i-K9-CnS"/>
                                         </connections>
@@ -242,6 +265,13 @@ Largest  Data.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="all" width="46" height="43"/>
+        <image name="calendar" width="13.5" height="15"/>
+        <image name="fav" width="19" height="17.5"/>
+        <image name="home" width="26" height="25.5"/>
+        <image name="index" width="11.5" height="16.5"/>
         <image name="mask.png" width="1368" height="652"/>
+        <image name="recent" width="51.5" height="51.5"/>
+        <image name="recommended" width="40" height="37.5"/>
     </resources>
 </document>

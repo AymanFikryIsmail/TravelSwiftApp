@@ -65,7 +65,7 @@
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wzs-bs-PRy">
                                 <rect key="frame" x="16" y="232" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.19607843137254902" green="0.043137254901960784" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9bt-tX-q0r"/>
                                 </constraints>
@@ -142,6 +142,6 @@
         <image name="splash_logo.png" width="1019" height="410"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ASC-mu-jNh"/>
+        <segue reference="shL-M9-wNg"/>
     </inferredMetricsTieBreakers>
 </document>

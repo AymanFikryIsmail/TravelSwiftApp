@@ -12,11 +12,36 @@ class QRViewController: UIViewController {
 
     @IBOutlet weak var qrImage: UIImageView!
     
-       var pkgDetails : CityPackage?
+    @IBOutlet weak var travelTo: UILabel!
+   
+    @IBOutlet weak var travelFrom: UILabel!
+    @IBOutlet weak var package_date: UILabel!
+    
+    
+    @IBOutlet weak var adults: UILabel!
+    
+    @IBOutlet weak var childs: UILabel!
+    
+    @IBOutlet weak var total_cost: UILabel!
+    var pkgDetails : CityPackage?
+    
+    var pkgBooked : BookPackage?
     override func viewDidLoad() {
         super.viewDidLoad()
         
          print(pkgDetails)
+       
+        travelTo.text = pkgDetails?.travel_to
+        travelFrom.text = pkgDetails?.travel_from
+         package_date.text = pkgDetails?.date
+         adults.text = "\(pkgBooked?.adults) X adults"
+         childs.text = "\(pkgBooked?.children)  X adults"
+        // total_cost.text = "\(pkgBooked?.totalCost )  LE"
+        
+        
+        
+        
+        
         
         let myString = "https://pennlabs.org"
         // Get data from the string

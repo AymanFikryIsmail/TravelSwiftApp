@@ -75,6 +75,14 @@ class BookingViewController: UIViewController {
         pkgdetails = self.storyboard!.instantiateViewController(withIdentifier: "qrvc") as! QRViewController
         pkgdetails.pkgDetails = pkgDetails
         
+        
+        var pkgBooked : BookPackage?
+        pkgBooked?.adults = Int(self.noAdults!.text!)!
+         pkgBooked?.children = Int(self.noChild!.text!)!
+        
+        pkgdetails.pkgBooked =  pkgBooked
+        
+        
         self.navigationController?.pushViewController(pkgdetails, animated: true)
         
     }

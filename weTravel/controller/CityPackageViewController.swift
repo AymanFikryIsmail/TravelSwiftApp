@@ -16,7 +16,10 @@ class PackageViewCell: UICollectionViewCell {
     
 
     @IBOutlet weak var packageName: UILabel!
+    @IBOutlet weak var packageDuration: UILabel!
     
+    @IBOutlet weak var packageAvailable: UILabel!
+    @IBOutlet weak var packageDate: UILabel!
     @IBOutlet weak var packageImage: UIImageView!
     func SetImage(url:String){
         //paralel process
@@ -60,6 +63,9 @@ class CityPackageViewController: UIViewController  , UICollectionViewDataSource 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "citypackagecell", for: indexPath) as! PackageViewCell
         let data = self.packages[indexPath.row]
         cell.packageName.text = data.p_name
+           cell.packageDate.text = data.date
+           cell.packageDuration.text = "\(data.duration)  days"
+        cell.packageAvailable.text = "only \(data.avail_tickets) available"
         cell.SetImage(url: data.paths[0])
         return cell
     }
